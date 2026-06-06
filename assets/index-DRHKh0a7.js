@@ -25,8 +25,8 @@ Error generating stack: `+e.message+`
         }
 
         html { scroll-behavior: smooth; }
-        body { background: var(--bg); color: var(--text); font-family: var(--font); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-        ::selection { background: rgba(198,123,255,0.3); }
+        body { background: var(--bg); color: var(--text); font-family: var(--font); overflow-x: hidden; -webkit-font-smoothing: antialiased; line-height: 1.2; }
+        ::selection { background: rgba(198,123,255,0.4); color: #fff; }
 
         /* GLOW BG */
         .glow-bg {
@@ -83,7 +83,7 @@ Error generating stack: `+e.message+`
 
         .hero-title {
           font-size: clamp(40px, 5.5vw, 76px);
-          font-weight: 700; line-height: 1.05;
+          font-weight: 700; 
           letter-spacing: -2px; color: var(--text);
           max-width: 820px;
           opacity: 0; transform: translateY(16px);
@@ -98,7 +98,7 @@ Error generating stack: `+e.message+`
 
         .hero-sub {
           margin-top: 24px; font-size: 18px; font-weight: 400;
-          line-height: 1.7; color: var(--muted); max-width: 520px;
+           color: var(--muted); max-width: 520px;
           opacity: 0; transform: translateY(10px);
           transition: all 0.5s ease 0.35s;
         }
@@ -129,7 +129,7 @@ Error generating stack: `+e.message+`
 
         /* SECTION LABELS */
         .section-label { font-size: 12px; font-weight: 600; color: var(--muted2); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; }
-        .section-title { font-size: clamp(28px, 3vw, 42px); font-weight: 700; line-height: 1.15; letter-spacing: -1px; margin-bottom: 48px; }
+        .section-title { font-size: clamp(28px, 3vw, 42px); font-weight: 700;  letter-spacing: -1px; margin-bottom: 48px; }
 
         /* SERVICES */
         .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
@@ -141,7 +141,7 @@ Error generating stack: `+e.message+`
         .service-card:hover { border-color: rgba(198,123,255,0.3); background: var(--surface2); }
         .service-icon { font-size: 28px; margin-bottom: 16px; }
         .service-title { font-size: 17px; font-weight: 600; margin-bottom: 8px; letter-spacing: -0.3px; }
-        .service-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+        .service-desc { font-size: 14px; color: var(--muted);  }
 
         /* PROJECTS */
         .projects-list { display: flex; flex-direction: column; gap: 16px; }
@@ -159,7 +159,7 @@ Error generating stack: `+e.message+`
           background: rgba(255,255,255,0.06); border: 1px solid var(--border);
           padding: 4px 10px; border-radius: 9999px; letter-spacing: 0.05em;
         }
-        .project-desc { font-size: 15px; color: var(--muted); line-height: 1.65; margin-bottom: 20px; }
+        .project-desc { font-size: 15px; color: var(--muted);  margin-bottom: 20px; }
         .project-bottom { display: flex; align-items: center; justify-content: space-between; }
         .project-stack { display: flex; flex-wrap: wrap; gap: 6px; }
         .stack-tag {
@@ -176,8 +176,8 @@ Error generating stack: `+e.message+`
 
         /* ABOUT */
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-        .about-title { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; letter-spacing: -1px; line-height: 1.2; margin-bottom: 20px; }
-        .about-text { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 12px; }
+        .about-title { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; letter-spacing: -1px;  margin-bottom: 20px; }
+        .about-text { font-size: 15px; color: var(--muted);  margin-bottom: 12px; }
         .skills-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
         .skill-tag {
           font-size: 13px; font-weight: 500; color: var(--muted);
@@ -190,13 +190,13 @@ Error generating stack: `+e.message+`
         /* CONTACT */
         .contact { text-align: center; padding: 96px 32px 120px; position: relative; z-index: 1; }
         .contact-inner { max-width: 580px; margin: 0 auto; }
-        .contact-title { font-size: clamp(36px, 5vw, 60px); font-weight: 700; letter-spacing: -2px; line-height: 1.05; margin-bottom: 20px; }
+        .contact-title { font-size: clamp(36px, 5vw, 60px); font-weight: 700; letter-spacing: -2px;  margin-bottom: 20px; }
         .contact-title .grad {
           background: var(--grad-text);
           -webkit-background-clip: text; -webkit-text-fill-color: transparent;
           background-clip: text;
         }
-        .contact-sub { font-size: 17px; color: var(--muted); line-height: 1.6; margin-bottom: 40px; }
+        .contact-sub { font-size: 17px; color: var(--muted);  margin-bottom: 40px; }
         .contact-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
         /* FOOTER */
